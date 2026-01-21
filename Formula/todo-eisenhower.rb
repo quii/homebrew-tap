@@ -5,21 +5,21 @@
 class TodoEisenhower < Formula
   desc "Visualize todo.txt files as an Eisenhower matrix in your terminal"
   homepage "https://github.com/quii/todo-eisenhower"
-  version "0.11.0"
+  version "0.11.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/quii/todo-eisenhower/releases/download/v0.11.0/todo-eisenhower-0.11.0-darwin-amd64.tar.gz"
-      sha256 "85ff43d2e63834002c2e71f8716fa77cab68a1cf88487134c1539e77676cadf7"
+      url "https://github.com/quii/todo-eisenhower/releases/download/v0.11.1/todo-eisenhower-0.11.1-darwin-amd64.tar.gz"
+      sha256 "c9c337df3060c59fa439d8e82b64f34056130a0dc46a0e75500ae6ed61433072"
 
       def install
         bin.install "eisenhower"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/quii/todo-eisenhower/releases/download/v0.11.0/todo-eisenhower-0.11.0-darwin-arm64.tar.gz"
-      sha256 "92deb34a8d176d03e8dbd75a62ef4390a37337b90b65ed36cbd1d15e41574a76"
+      url "https://github.com/quii/todo-eisenhower/releases/download/v0.11.1/todo-eisenhower-0.11.1-darwin-arm64.tar.gz"
+      sha256 "96831120a76a76126a9fe8f2e43ede3198f70a406068a6a4ef787f8969043d1e"
 
       def install
         bin.install "eisenhower"
@@ -29,15 +29,15 @@ class TodoEisenhower < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quii/todo-eisenhower/releases/download/v0.11.0/todo-eisenhower-0.11.0-linux-amd64.tar.gz"
-      sha256 "413adbe113cdba69bc74dbb78bf81a41993a36b46c5a4f8826985023adfeef10"
+      url "https://github.com/quii/todo-eisenhower/releases/download/v0.11.1/todo-eisenhower-0.11.1-linux-amd64.tar.gz"
+      sha256 "0560de7f196a209c8c3d1ba7a6d907b976b549b9d6aa5e7a9bfaa40e551b06da"
       def install
         bin.install "eisenhower"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quii/todo-eisenhower/releases/download/v0.11.0/todo-eisenhower-0.11.0-linux-arm64.tar.gz"
-      sha256 "d604f4fb3cebb6b4b0f810e0d69b48df007987025e2b40d8de9c15995d247860"
+      url "https://github.com/quii/todo-eisenhower/releases/download/v0.11.1/todo-eisenhower-0.11.1-linux-arm64.tar.gz"
+      sha256 "a72b03a178ded05913eec313801c0dd9b92f507659c53df8af62e476a447ec58"
       def install
         bin.install "eisenhower"
       end
